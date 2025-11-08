@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="assets/images/taskbar/startButton.png">
+        <title>Web 10</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="taskbar">
+            <button onclick="toggleElementVisibility('startMenuDiv')" class="tbButton"><img draggable="false" src="/assets/images/taskbar/startButton.png" class="tbIcon"></button>
+            <button onclick="alert('Hello, World!')" class="tbButton"><img draggable="false" src="/assets/images/taskbar/searchIcon.png" class="tbIcon"></button>
+            <button onclick="toggleElementVisibility('browser')" class="tbButton"><img draggable="false" src="https://duckduckgo.com/i/7cc56a9e47e8c282.png" class="tbIcon"></button>
+        </div>
+        <div id="startMenuDiv" class="startMenu"><iframe src="/programs/systemPrograms/startMenu/startMenu.html" frameborder="0" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 86%); backdrop-filter: blur(20%);"></iframe></div>
+        <div class="window" id="browser">
+            <div class="windowBar">title</div>
+        </div>
+    </body>
+</html>

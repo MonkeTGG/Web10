@@ -1,0 +1,70 @@
+html, body {
+    background-image: url("assets/images/defaultWallpaper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.taskbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(14px);
+}
+
+.tbButton {
+    position: relative;
+    background: none;
+    outline: none;
+    border: none;
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 16.5px;
+}
+
+.tbIcon {
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none;
+    user-select: none;
+}
+
+.startMenu {
+    position: absolute;
+    display: none;
+    bottom: 50px;
+    width: 650px;
+    height: 750px;
+    backdrop-filter: blur(14px);
+}
+
+.windowBar {
+    position: absolute;
+    background-color: rgb(18, 18, 18);
+    width: 500px;
+    height: 35px;
+    font-size: large;
+    color: white;
+    padding: 0px;
+}
+
+.window {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(18, 18, 18);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 25%);
+    overflow: hidden;
+    resize: both;
+    display: none;
+}

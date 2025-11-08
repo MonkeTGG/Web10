@@ -1,0 +1,19 @@
+html, body {
+    padding: 0%;
+    margin: 0;
+    background-color: black;
+}
+
+.webpage {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.pageCut {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    bottom: 0;
+}
