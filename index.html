@@ -8,13 +8,15 @@
     </head>
     <body>
         <div class="taskbar">
-            <button onclick="toggleElementVisibility('startMenuDiv')" class="tbButton"><img draggable="false" src="/assets/images/taskbar/startButton.png" class="tbIcon"></button>
-            <button onclick="alert('Hello, World!')" class="tbButton"><img draggable="false" src="/assets/images/taskbar/searchIcon.png" class="tbIcon"></button>
-            <button onclick="toggleElementVisibility('browser')" class="tbButton"><img draggable="false" src="https://duckduckgo.com/i/7cc56a9e47e8c282.png" class="tbIcon"></button>
+            <button onclick="toggleElementVisibility('startMenuDiv')" class="tbButton"><img draggable="false" src="assets/images/taskbar/startButton.png" class="tbIcon"></button>
+            <button onclick="alert('Hello, World!')" class="tbButton"><img draggable="false" src="assets/images/taskbar/searchIcon.png" class="tbIcon"></button>
+            <button onclick="toggleElementVisibility('browser'); makeWindowDraggable('browser');" class="tbButton"><img draggable="false" src="https://duckduckgo.com/i/7cc56a9e47e8c282.png" class="tbIcon"></button>
+            <button class="" style="position: absolute; right: -2.5px; height: 100%; width: 0px; background-color: rgba(0, 0, 0, 0); border: 0; box-shadow: -1.5px 0 rgba(25, 25, 25, 50);"></button>
+            <button class="trayIcon"><img draggable="false" src="assets/images/taskbar/actionCenter.png" class="tbIcon"></button>
         </div>
-        <div id="startMenuDiv" class="startMenu"><iframe src="/programs/systemPrograms/startMenu/startMenu.html" frameborder="0" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 86%); backdrop-filter: blur(20%);"></iframe></div>
-        <div class="window" id="browser">
-            <div class="windowBar">title</div>
+        <div id="startMenuDiv" class="startMenu" style="display: none;"><iframe src="programs/systemPrograms/startMenu/startMenu.html" frameborder="0" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 86%); backdrop-filter: blur(20%);"></iframe></div>
+        <div class="window" style="display: none;" id="browser">
+            <div id="browserTitleBar" class="titleBar">title</div>
         </div>
     </body>
 </html>
