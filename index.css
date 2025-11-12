@@ -50,12 +50,23 @@ html, body {
 
 .titleBar {
     position: absolute;
-    background-color: rgb(18, 18, 18);
-    width: 500px;
+    background-color: white ;
+    width: 100%;
     height: 35px;
-    font-size: large;
-    color: white;
+    font-size: 14px;
+    color: black;
     padding: 0px;
+    line-height: 35px;
+    padding-left: 8.75px;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none;
+    user-select: none;
+    pointer-events: visibleStroke;
 }
 
 .window {
@@ -68,6 +79,24 @@ html, body {
     position: absolute;
     left: 10px;
     top: 10px;
+    min-width: 636px;
+    min-height: 323px;
+}
+
+.windowIcon {
+    position: relative;
+    background: none;
+    outline: none;
+    border: none;
+    height: 50%;
+    aspect-ratio: 1;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none;
+    user-select: none;
+    padding-right: 5px;
 }
 
 .trayIcon {
@@ -78,5 +107,31 @@ html, body {
     height: 100%;
     aspect-ratio: 1;
     padding: 16.5px;
-    right: 10px;
+    right: 20px;
+}
+
+.windowButtons {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding-right: 9px;
+}
+
+.windowButton {
+    float: right;
+    height: 100%;
+    aspect-ratio: 1.5;
+    border: none;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wbIcon {
+    aspect-ratio: 1;
+    filter: brightness(0%);
+    -webkit-filter: brightness(0%);
 }
